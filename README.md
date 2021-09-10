@@ -1,2 +1,2 @@
-# aprendizado_PHP
-Códigos testes de aprendizado em PHP
+# Algumas anotações de código em PHP
+
