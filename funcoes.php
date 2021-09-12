@@ -52,12 +52,13 @@ foreach ($contaCorrentes as $cpf => $conta) {
 }
 
 $contaCorrentes['234.567.890-01']  = depositar($contaCorrentes['234.567.890-01'],500);
-$contaCorrentes['123.456.789-10']  = sacar($contaCorrentes['123.456.789-10'],2000);
+$contaCorrentes['123.456.789-10']  = sacar($contaCorrentes['123.456.789-10'],300);
 
 echo PHP_EOL;
 
+// interpolação de string - usando variaveis dentro de strings (retirando as ' ' dos arrays associativos)
 foreach ($contaCorrentes as $cpf => $conta) {
-    exibeMensagem($cpf . " " . $conta['titular'] . " saldo:" . $conta['saldo'] );
+    exibeMensagem("$cpf - $conta[titular] saldo: $conta[saldo] ");
 }
 
 
