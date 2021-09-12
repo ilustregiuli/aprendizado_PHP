@@ -49,3 +49,7 @@ foreach ($contaCorrentes as $key => $value) {
     echo $key.' '.$value['titular'].' saldo: '.$value['saldo'].PHP_EOL;
 }
 
+echo 'Acessando um item individualmente'.PHP_EOL;
+
+echo $contaCorrentes['723.045.300-00']['titular'];
+
